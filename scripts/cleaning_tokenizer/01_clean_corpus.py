@@ -2,7 +2,7 @@ from pathlib import Path
 import pandas as pd
 from huggingface_hub import (hf_hub_download,
                              login as hf_login)
-from cleaning import clean_dataframe
+from cleaning import clean_dataframe , normalize_text , prepare_document
 from huggingface_hub import login as hf_login
 from dotenv import load_dotenv
 import os
@@ -66,6 +66,9 @@ def download_and_filter():
 
         print(f"Saved: {output_file}\n")
 
+
+def normalizer():
+    pass    
 
 def clean_phase(phase, input_path, output_path):
     df = pd.read_parquet(input_path)
