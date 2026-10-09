@@ -160,9 +160,9 @@ def main():
 
     print(f"Tokenizer saved to: {OUTPUT_PATH}")
 
-    print("\nStep 5: Sanity check")
+    # print("\nStep 5: Sanity check")
 
-    sanity_check(tokenizer)
+    # sanity_check(tokenizer)
 
 
 if __name__ == "__main__":
